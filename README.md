@@ -1,7 +1,7 @@
 curses.go
 =============
 
-GO binding for ncurses.
+Simplified GO binding for ncurses.
 
 Sample
 -------
