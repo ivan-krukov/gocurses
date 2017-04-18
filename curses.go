@@ -8,7 +8,6 @@ package gocurses
 // void wrapper_wclrtoeol(WINDOW* win) { wclrtoeol(win); }
 // void wrapper_wattrset(WINDOW* win, int attr) { wattrset(win, attr); }
 // int wrapper_color_pair(int i) { return COLOR_PAIR(i); }
-//
 
 import "C"
 import "unsafe"
@@ -49,7 +48,7 @@ func Cbreak(on bool) {
 }
 
 // Set character echoing while reading.
-func Echo(bool on) {
+func Echo(on bool) {
 	if on {
 		C.echo()
 	} else {
@@ -57,7 +56,7 @@ func Echo(bool on) {
 	}
 }
 
-func Nl(bool on) {
+func Nl(on bool) {
 	if on {
 		C.nl()
 	} else {
@@ -65,7 +64,7 @@ func Nl(bool on) {
 	}
 }
 
-func Qiflush(bool on) {
+func Qiflush(on bool) {
 	if on {
 		C.qiflush()
 	} else {
