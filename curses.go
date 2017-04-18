@@ -8,7 +8,7 @@ package gocurses
 // void wrapper_wclrtoeol(WINDOW* win) { wclrtoeol(win); }
 // void wrapper_wattrset(WINDOW* win, int attr) { wattrset(win, attr); }
 // int wrapper_color_pair(int i) { return COLOR_PAIR(i); }
-
+//
 import "C"
 import "unsafe"
 import "fmt"
