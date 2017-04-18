@@ -35,9 +35,6 @@ Requirements
 Installation
 -------
 
-goinstall is now supporting cgo packages, therefore installing gocurses
-should be as easy as:
-
     $ go get github.com/tncardoso/gocurses
 
 If you have problems with go get, you can update your go release or
