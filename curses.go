@@ -289,6 +289,13 @@ func Getmaxyx() (row, col int) {
 	return row, col
 }
 
+// Get cursor position
+func (window *Window) Getyx() (row, col int) {
+	row = int(C.getcury(window.cwin))
+	col = int(C.getcurx(window.cwin))
+	return row, col
+}
+
 // Erases content from cursor to end of line inclusive.
 func (window *Window) Clrtoeol() {
 	C.wrapper_wclrtoeol(window.cwin)
